@@ -1,0 +1,14 @@
+{
+  "dynamic": "strict",
+  "properties": {
+    "id":     {"type": "keyword",      "index": "true"},
+    "name":   {"type": "keyword",      "index": "true"},
+    "height": {"type": "long",      "index": "true"},
+
+    "nestModel":               {"type": "nested",      "dynamic": "strict",
+      "properties": {
+        "nestHeight":           {"type": "long",      "index": "true"}
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "analysis": {
+    "analyzer": {
+      "edgebgran_analyzer": {"tokenizer": "edgebgran_tokenizer", "filter": ["lowercase"]},
+      "autocomplete_search": {"tokenizer": "lowercase"}
+    },
+    "tokenizer": {
+      "edgebgran_tokenizer": {"type": "edge_ngram", "min_gram": 1, "max_gram": 16}
+    }
+  },
+  "max_result_window" : "1000000"
+}
